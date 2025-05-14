@@ -1,0 +1,148 @@
+<!-- Quiz: Fotografia i gry komputerowe -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz – Moje Zainteresowania</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+  <button id="toggleMode">🌙</button>
+  <header>
+    <img id="logo" src="logo.svg" alt="Logo" />
+    <h1>Quiz – Sprawdź swoją wiedzę!</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Strona główna</a></li>
+      <li><a href="temat1.html">Fotografia</a></li>
+      <li><a href="temat2.html">Gry</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <form id="quizForm">
+    <div id="questions">
+      <!-- 1–7: Fotografia -->
+      <div>
+        <p>1. Co oznacza skrót ISO w fotografii?</p>
+        <label><input type="radio" name="q1" value="a"> a) Czułość matrycy</label><br>
+        <label><input type="radio" name="q1" value="b"> b) Typ soczewki</label><br>
+        <label><input type="radio" name="q1" value="c"> c) Ogniskową</label><br>
+        <label><input type="radio" name="q1" value="d"> d) Kolorystykę zdjęcia</label>
+      </div>
+      <div>
+        <p>2. Który tryb w aparacie pozwala ręcznie ustawić wszystkie parametry?</p>
+        <label><input type="radio" name="q2" value="a"> a) Auto</label><br>
+        <label><input type="radio" name="q2" value="b"> b) Manual</label><br>
+        <label><input type="radio" name="q2" value="c"> c) Portret</label><br>
+        <label><input type="radio" name="q2" value="d"> d) Krajobraz</label>
+      </div>
+      <div>
+        <p>3. Co to jest głębia ostrości?</p>
+        <label><input type="radio" name="q3" value="a"> a) Rodzaj kadrowania</label><br>
+        <label><input type="radio" name="q3" value="b"> b) Zakres ostrości w kadrze</label><br>
+        <label><input type="radio" name="q3" value="c"> c) Czułość migawki</label><br>
+        <label><input type="radio" name="q3" value="d"> d) Zoom cyfrowy</label>
+      </div>
+      <div>
+        <p>4. Migawka steruje:</p>
+        <label><input type="radio" name="q4" value="a"> a) ISO</label><br>
+        <label><input type="radio" name="q4" value="b"> b) Ostrością</label><br>
+        <label><input type="radio" name="q4" value="c"> c) Czasem naświetlania</label><br>
+        <label><input type="radio" name="q4" value="d"> d) Kolorem zdjęcia</label>
+      </div>
+      <div>
+        <p>5. RAW to:</p>
+        <label><input type="radio" name="q5" value="a"> a) Surowy format zdjęcia</label><br>
+        <label><input type="radio" name="q5" value="b"> b) Format do druku</label><br>
+        <label><input type="radio" name="q5" value="c"> c) Format audio</label><br>
+        <label><input type="radio" name="q5" value="d"> d) Styl zdjęcia</label>
+      </div>
+      <div>
+        <p>6. Jaka ogniskowa nadaje się najlepiej do portretów?</p>
+        <label><input type="radio" name="q6" value="a"> a) 24mm</label><br>
+        <label><input type="radio" name="q6" value="b"> b) 85mm</label><br>
+        <label><input type="radio" name="q6" value="c"> c) 10mm</label><br>
+        <label><input type="radio" name="q6" value="d"> d) 300mm</label>
+      </div>
+      <div>
+        <p>7. Co oznacza skrót DSLR?</p>
+        <label><input type="radio" name="q7" value="a"> a) Typ lampy błyskowej</label><br>
+        <label><input type="radio" name="q7" value="b"> b) Cyfrowa lustrzanka jednoobiektywowa</label><br>
+        <label><input type="radio" name="q7" value="c"> c) Rodzaj pliku graficznego</label><br>
+        <label><input type="radio" name="q7" value="d"> d) Zestaw filtrów</label>
+      </div>
+
+      <!-- 8–15: Gry komputerowe -->
+      <div>
+        <p>8. Która firma stworzyła grę "The Witcher"?</p>
+        <label><input type="radio" name="q8" value="a"> a) Ubisoft</label><br>
+        <label><input type="radio" name="q8" value="b"> b) CD Projekt RED</label><br>
+        <label><input type="radio" name="q8" value="c"> c) Valve</label><br>
+        <label><input type="radio" name="q8" value="d"> d) Blizzard</label>
+      </div>
+      <div>
+        <p>9. Jaką funkcję pełni karta graficzna?</p>
+        <label><input type="radio" name="q9" value="a"> a) Przechowywanie danych</label><br>
+        <label><input type="radio" name="q9" value="b"> b) Wysyłanie e-maili</label><br>
+        <label><input type="radio" name="q9" value="c"> c) Renderowanie grafiki</label><br>
+        <label><input type="radio" name="q9" value="d"> d) Odtwarzanie muzyki</label>
+      </div>
+      <div>
+        <p>10. FPS to skrót od:</p>
+        <label><input type="radio" name="q10" value="a"> a) First Player Style</label><br>
+        <label><input type="radio" name="q10" value="b"> b) Frames per Second</label><br>
+        <label><input type="radio" name="q10" value="c"> c) Fantasy Platform Shooter</label><br>
+        <label><input type="radio" name="q10" value="d"> d) Full Play Simulation</label>
+      </div>
+      <div>
+        <p>11. W jakiej grze występują postacie Tracer, Genji i Zenyatta?</p>
+        <label><input type="radio" name="q11" value="a"> a) Valorant</label><br>
+        <label><input type="radio" name="q11" value="b"> b) Apex Legends</label><br>
+        <label><input type="radio" name="q11" value="c"> c) Overwatch</label><br>
+        <label><input type="radio" name="q11" value="d"> d) League of Legends</label>
+      </div>
+      <div>
+        <p>12. Minecraft został napisany pierwotnie w:</p>
+        <label><input type="radio" name="q12" value="a"> a) Pythonie</label><br>
+        <label><input type="radio" name="q12" value="b"> b) Javie</label><br>
+        <label><input type="radio" name="q12" value="c"> c) C++</label><br>
+        <label><input type="radio" name="q12" value="d"> d) JavaScript</label>
+      </div>
+      <div>
+        <p>13. Co oznacza "open world"?</p>
+        <label><input type="radio" name="q13" value="a"> a) Gra bez zakończenia</label><br>
+        <label><input type="radio" name="q13" value="b"> b) Gra z otwartą mapą do eksploracji</label><br>
+        <label><input type="radio" name="q13" value="c"> c) Gra z widokiem z góry</label><br>
+        <label><input type="radio" name="q13" value="d"> d) Gra tylko online</label>
+      </div>
+      <div>
+        <p>14. Który z tych sprzętów jest najważniejszy do płynnego grania?</p>
+        <label><input type="radio" name="q14" value="a"> a) Zasilacz</label><br>
+        <label><input type="radio" name="q14" value="b"> b) Monitor</label><br>
+        <label><input type="radio" name="q14" value="c"> c) Karta graficzna</label><br>
+        <label><input type="radio" name="q14" value="d"> d) Napęd DVD</label>
+      </div>
+      <div>
+        <p>15. Co oznacza skrót MMO?</p>
+        <label><input type="radio" name="q15" value="a"> a) Mega Multiplayer Option</label><br>
+        <label><input type="radio" name="q15" value="b"> b) Massively Multiplayer Online</label><br>
+        <label><input type="radio" name="q15" value="c"> c) Music Motion Online</label><br>
+        <label><input type="radio" name="q15" value="d"> d) Multi Match Operator</label>
+      </div>
+    </div>
+    <div style="text-align: center; margin: 2rem;">
+      <button type="submit">Sprawdź wynik</button>
+    </div>
+    <div id="result" style="text-align: center; font-size: 1.2rem;"></div>
+  </form>
+
+  <footer>
+    <p>&copy; 2025 Moje Zainteresowania</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

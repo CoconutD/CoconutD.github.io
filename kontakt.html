@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Przełącznik trybu jasny/ciemny -->
+    <button id="toggleMode">🌞/🌙</button>
+
+    <!-- Nagłówek i nawigacja -->
+    <header>
+        <!-- Opis sekcji: nagłówek z logo -->
+        <img src="logo.svg" alt="Logo strony" id="logo">
+        <h1>Skontaktuj się ze mną</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="temat1.html">Zainteresowanie 1</a></li>
+            <li><a href="temat2.html">Zainteresowanie 2</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formularz kontaktowy z walidacją w JS -->
+    <main>
+        <!-- Opis sekcji: formularz kontaktowy z wymaganymi polami -->
+        <form id="contactForm">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+        <p id="formMsg"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Moje Zainteresowania</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

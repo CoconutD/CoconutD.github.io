@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Zainteresowania</title>
+    <!-- Czcionka gamingowa z Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Przełącznik trybu jasny/ciemny -->
+    <button id="toggleMode">🌞/🌙</button>
+
+    <!-- Logo SVG -->
+    <header>
+        <!-- Opis sekcji: nagłówek z logo i tytułem -->
+        <img src="logo.svg" alt="Logo strony" id="logo">
+        <h1>Witaj na mojej stronie o zainteresowaniach!</h1>
+    </header>
+
+    <!-- Nawigacja po podstronach -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="temat1.html">Zainteresowanie 1</a></li>
+            <li><a href="temat2.html">Zainteresowanie 2</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Akordeon z filmem -->
+        <section>
+            <h2>Zainteresowania</h2>
+            <div class="accordion">
+                <button class="accordion-button">📷 Fotografia</button>
+                <div class="accordion-content">
+                    <p>Lubię robić zdjęcia przyrody i miast. Używam aparatu Canon EOS.</p>
+                    <!-- Film z YouTube -->
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/awlwB3-r9eU" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <button class="accordion-button">🎮 Gry komputerowe</button>
+                <div class="accordion-content">
+                    <p>Gram w gry strategiczne i Survival. Ulubione to ARK: Survival Evolved i Total war warhammer 3.</p>
+                    <img src="capsule_616x353.jpg" alt="Screenshot gry">
+                </div>
+                <button class="accordion-button">🚲 Jazda na rowerze</button>
+                <div class="accordion-content">
+                    <p>Jeżdżę do szkoły i wracam.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria -->
+        <section>
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <img src="drzewo.jpg" alt="Zdjęcie 1" onclick="showPreview(this)">
+                <img src="kwiaty2.jpg" alt="Zdjęcie 2" onclick="showPreview(this)">
+            </div>
+            <div id="preview" class="preview"></div>
+        </section>
+
+        <!-- Tabela -->
+        <section>
+            <h2>Harmonogram tygodnia</h2>
+            <table>
+                <thead>
+                    <tr><th>Dzień</th><th>Aktywność</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Poniedziałek</td><td>Fotografia w plenerze</td></tr>
+                    <tr><td>Środa</td><td>Gry zespołowe online</td></tr>
+                    <tr><td>Sobota</td><td>Skatepark</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Stopka -->
+    <footer>
+        <p>&copy; 2025 Moje Zainteresowania</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
